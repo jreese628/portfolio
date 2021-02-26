@@ -25,12 +25,12 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
-    color: white;
+    background-color:teal;
+    color: silver;
     padding: 1.5rem 8rem;
     position: sticky;
     top: 0;
-    border-bottom: 3px solid teal;
+    border-bottom: 3px solid silver;
 }
 
 ul {
@@ -43,6 +43,7 @@ ul {
 h2 a {
     color: white;
     text-decoration: none;
+    font-size: 2rem;
 }
 
 nav li a {
@@ -59,8 +60,9 @@ nav li a:hover {
 }
 
 #hero {
-    background: url(../images/charlotte-skyline-2-thinkstock_1024xx2129-1203-0-57.jpg) no-repeat center center/cover;
+    background: url(../images/charlotte-skyline-2-thinkstock_1024xx2129-1203-0-57.jpg) no-repeat center center/cover ;
     height: 90vh;
+    
 }
 
 .hero-content {
@@ -69,18 +71,16 @@ nav li a:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
-    position: absolute;
     top: 81px;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
-    color: seashell;
+    color: silver;
 }
 
 .hero-content .btn {
@@ -91,4 +91,41 @@ nav li a:hover {
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
+}
+
+#about {
+    padding: 5rem 0;
+    background-color: silver;
+}
+
+about-heading h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+#about .about-picture img {
+    width: 40%;
+    margin-top: 50px;
+}
+
+#about .container p {
+    width: 50%;
+}
+#about .about-content {
+    display: flex;
+}
+#about .about-text {
+    text-align: center;
+}
+
+#about .resumeimg img {
+    width: 65%;
+    display: flex;
 }
