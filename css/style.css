@@ -5,127 +5,233 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    color: #333;
-    overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: #333;
+  background-color: darkgrey;
 }
 
-
 .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .text-primary {
-    color: #3693ff;
+  color: #3693ff;
 }
-
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    background-color:teal;
-    color: silver;
-    padding: 1.5rem 8rem;
-    position: sticky;
-    top: 0;
-    border-bottom: 3px solid silver;
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  color: silver;
+  padding: 1.5rem 8rem;
+  top: 0;
+  border-bottom: 3px solid silver;
 }
 
-ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
-h2 a {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
+nav h2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 nav li a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    font-size: 1.3rem;
-    margin: 0 0.5rem;
-    border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
 }
 
 nav li a:hover {
-    background-color: teal;
+  background-color: darkgrey;
 }
 
 #hero {
-    background: url(../images/charlotte-skyline-2-thinkstock_1024xx2129-1203-0-57.jpg) no-repeat center center/cover ;
-    height: 90vh;
-    
+  background: url(../images/charlotte-skyline-2-thinkstock_1024xx2129-1203-0-57.jpg)
+    no-repeat center center/cover;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/charlotte-skyline-2-thinkstock_1024xx2129-1203-0-57.jpg");
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    top: 81px;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 81px;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    color: silver;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
 }
 
 .hero-content .btn {
-    color: white;
-    font-size: 2rem;
-    padding: 1rem 10rem;
-    background: teal;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 10rem;
+  background: teal;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
 }
 
 #about {
-    padding: 5rem 0;
-    background-color: silver;
+  padding: 5rem 0;
+  background-color: teal;
 }
 
-about-heading h2 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
+#about h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 #about p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-#about .about-picture img {
-    width: 40%;
-    margin-top: 50px;
-}
-
-#about .container p {
-    width: 50%;
-}
 #about .about-content {
-    display: flex;
-}
-#about .about-text {
-    text-align: center;
+  display: flex;
 }
 
-#about .resumeimg img {
-    width: 65%;
+#about .about-text,
+#about .about-image {
+  flex: 1;
+}
+
+#about .about-text {
+  text-align: justify;
+}
+
+#about .about-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  border-radius: 20%;
+  margin-top: 60px;
+}
+
+#projects {
+  background-color: darkgrey;
+}
+
+.resume img {
+  padding: 0.5rem;
+  margin: auto;
+  width: 50%;
+}
+
+.flex-container1 {
     display: flex;
+    background-color: darkgrey;
+    justify-content: center;
+  }
+  
+  .flex-container1 > div {
+    background-color: darkgrey;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .flex-container2 {
+    display: flex;
+    background-color: darkgrey;
+    justify-content: center;
+  }
+  
+  .flex-container2 > div {
+    background-color: darkgrey;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+button {
+    background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+
+
+#contact {
+  margin-top: 50px;
+  background-color: darkgrey;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+#contact input[type="text"],
+select,
+textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+/* Style the submit button with a specific background color etc */
+#contact input[type="submit"] {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Add a background color and some padding around the form */
+#contact .container {
+  border-radius: 5px;
+  background-color: darkgrey;
+  padding: 20px;
+}
+
+footer {
+  position: relative;
+  padding: 2.5rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
 }
