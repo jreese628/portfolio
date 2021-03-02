@@ -92,6 +92,16 @@ nav li a:hover {
   border-radius: 10px;
 }
 
+button a {
+  color: white;
+  font-size: 1rem;
+  /* padding: 1rem; */
+  background: teal;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
 #about {
   padding: 5rem 0;
   background-color: teal;
@@ -119,6 +129,7 @@ nav li a:hover {
 
 #about .about-text {
   text-align: justify;
+  color: black;
 }
 
 #about .about-image img {
@@ -137,6 +148,17 @@ nav li a:hover {
   padding: 0.5rem;
   margin: auto;
   width: 50%;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .flex-container1 {
